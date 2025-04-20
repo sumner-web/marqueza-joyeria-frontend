@@ -1,0 +1,131 @@
+/* Estilos del footer */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Secciones del footer */
+  .footer-section {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+    text-align: left; /* Alinea el texto dentro de cada sección a la izquierda */
+  }
+  
+  /* Información de contacto */
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .contact-info button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .contact-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Políticas */
+  .policies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .policies li {
+    margin-bottom: 5px;
+  }
+  
+  .policies a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .policies a:hover {
+    color: #007BFF;
+  }
+  
+  /* Métodos de pago */
+  .payment-methods div {
+    margin-top: 10px;
+  }
+  
+  .payment-methods img {
+    width: 30px;
+    margin: 5px;
+  }
+  
+  /* Formulario de suscripción */
+  .subscription-form {
+    text-align: left;
+  }
+  
+  .subscription-form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .subscription-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscription-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .subscription-form p {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Redes sociales */
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: #007BFF;
+  }
+  
+  /* Derechos de autor */
+  footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+  }

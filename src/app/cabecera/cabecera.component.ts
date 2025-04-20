@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./cabecera.component.css']
 })
 export class CabeceraComponent {
+  isUserMenuVisible = false;
+
+  toggleUserMenu(): void {
+    this.isUserMenuVisible = !this.isUserMenuVisible;
+  }
+  scrollToContacto(): void {
+    const footer = document.getElementById('contacto');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
 }

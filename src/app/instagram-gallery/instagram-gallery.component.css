@@ -1,0 +1,56 @@
+/* Estilos para la sección de la galería de Instagram */
+.instagram-gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fafafa; /* Un fondo gris muy claro */
+  }
+  
+  .section-title h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .section-title p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Crea una cuadrícula responsive */
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .gallery-item {
+    overflow: hidden; /* Para que las imágenes no se desborden */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05); /* Sombra sutil para cada imagen */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita espacios extra debajo de la imagen */
+    transition: transform 0.3s ease-in-out; /* Efecto de zoom al pasar el ratón */
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design (ajustes para pantallas más pequeñas) */
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  
+    .section-title h2 {
+      font-size: 1.8em;
+    }
+  
+    .section-title p {
+      font-size: 0.9em;
+    }
+  }

@@ -6,22 +6,32 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#promociones">Promociones</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a (click)="scrollToContacto()" style="cursor: pointer;">Contacto</a></li>
         </ul>
     </nav>
 
     <div class="search-bar">
-        <button><i class="fas fa-search"></i></button>
+        <button><i class="bi bi-search"></i></button>
         <input type="text" placeholder="Buscar producto...">
     </div>
-
+    
     <div class="cart-icon">
-        <i class="fas fa-shopping-cart"></i>
+        <i class="bi bi-cart"></i>
         <span>Carrito (0)</span>
     </div>
-
-    <div class="user-icon">
-        <i class="fas fa-user"></i>
-        <span>Configuraciones</span>
+    
+    <div class="user-menu-container">
+        <div class="user-icon" (click)="toggleUserMenu()">
+          <i class="bi bi-person"></i>
+          <span></span>
+        </div>
+        <div class="user-menu" [class.show]="isUserMenuVisible">
+          <ul>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Configuraciones</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </div>
     </div>
 </header>

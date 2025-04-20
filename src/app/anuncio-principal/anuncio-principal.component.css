@@ -1,0 +1,81 @@
+/* Estilos para la sección de anuncio principal */
+.announcement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Un fondo gris claro */
+  }
+  
+  .content {
+    text-align: left;
+    max-width: 50%;
+  }
+  
+  .content h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .content button {
+    background-color: #007bff; /* Un azul llamativo */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content button:hover {
+    background-color: #0056b3;
+  }
+  
+  .announcement .images img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 300px; /* Ajusta este valor según lo necesites */
+  }
+  
+  /* O, si quieres controlar la altura del contenedor de imágenes */
+  .announcement .images {
+    display: flex;
+    gap: 20px;
+    max-height: 300px; /* Ajusta este valor */
+  }
+  
+  .announcement .images img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Responsive design (ajustes básicos para pantallas más pequeñas) */
+  @media (max-width: 768px) {
+    .announcement {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .content {
+      max-width: 80%;
+      margin-bottom: 30px;
+    }
+  
+    .images {
+      max-width: 80%;
+    }
+  
+    .images img {
+      margin-bottom: 10px;
+    }
+  }
